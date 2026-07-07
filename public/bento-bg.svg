@@ -75,9 +75,9 @@
   <use xlink:href="#profile" transform="translate(1142,1536) rotate(3.6) scale(1.36)"/>
   <use xlink:href="#profile" transform="translate(1430,1577) rotate(4.3) scale(1.25)"/>
   <use xlink:href="#profile" transform="translate(1716,1487) rotate(6.0) scale(1.26)"/>
-  <use xlink:href="#profile" transform="translate(1235,205) rotate(-5) scale(0.95)"/>
-  <use xlink:href="#profile" transform="translate(1520,130) rotate(4) scale(0.85)"/>
-  <use xlink:href="#company" transform="translate(1790,235) rotate(-3) scale(1.0)"/>
+  <use xlink:href="#profile" transform="translate(1235,205) rotate(-4) scale(0.95)"/>
+  <use xlink:href="#profile" transform="translate(1520,130) rotate(-4) scale(0.95)"/>
+  <use xlink:href="#company" transform="translate(1790,235) rotate(-4) scale(0.95)"/>
 
   <g stroke="#149d4a" fill="none" opacity="0.4">
     <path stroke-width="2.5" d="M1235,205 Q1393,225 1520,130"/>

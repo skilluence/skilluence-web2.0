@@ -178,8 +178,55 @@ ${stars(46, 330)}
 </svg>
 `;
 
+/* ── daylight skyline for the industries section ── */
+const dFar = skyline({ baseY: 940, minH: 60, maxH: 190, minW: 40, maxW: 100, windowChance: 0.05, windowColor: "#b7cdbd" });
+const dMid = skyline({ baseY: 1070, minH: 110, maxH: 290, minW: 52, maxW: 130, windowChance: 0.07, windowColor: "#a3bfad" });
+const dNear = skyline({ baseY: 1230, minH: 150, maxH: 360, minW: 68, maxW: 165, windowChance: 0.08, windowColor: "#8fb19d" });
+const dayCity = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#f2f7f1"/>
+      <stop offset="1" stop-color="#e7f0e8"/>
+    </linearGradient>
+    <radialGradient id="dsun" cx="0.76" cy="0.08" r="0.55">
+      <stop offset="0" stop-color="#f5f1d6" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#f5f1d6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dsoft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="dmid" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="dhaze" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
+  <rect width="${W}" height="1200" fill="url(#dsky)"/>
+  <rect width="${W}" height="1200" fill="url(#dsun)"/>
+  <g fill="#d9e6db" filter="url(#dsoft)">
+    ${dFar.buildings}
+  </g>
+  <g filter="url(#dsoft)">
+    ${dFar.windows}
+  </g>
+  <rect x="-100" y="880" width="${W + 200}" height="160" fill="#ffffff" opacity="0.55" filter="url(#dhaze)"/>
+  <g filter="url(#dmid)">
+    <g fill="#c5d8ca">
+    ${dMid.buildings}
+    </g>
+    <g>
+    ${dMid.windows}
+    </g>
+  </g>
+  <rect x="-100" y="1010" width="${W + 200}" height="140" fill="#ffffff" opacity="0.45" filter="url(#dhaze)"/>
+  <g fill="#b0c8ba">
+    ${dNear.buildings}
+  </g>
+  <g>
+    ${dNear.windows}
+  </g>
+</svg>
+`;
+
 writeFileSync(new URL("../public/hero-sky.svg", import.meta.url), sky);
 writeFileSync(new URL("../public/hero-mid.svg", import.meta.url), midSvg);
 writeFileSync(new URL("../public/hero-front.svg", import.meta.url), frontSvg);
 writeFileSync(new URL("../public/city-bg.svg", import.meta.url), city);
-console.log("hero-sky, hero-mid, hero-front, city-bg written");
+writeFileSync(new URL("../public/industry-bg.svg", import.meta.url), dayCity);
+console.log("hero-sky, hero-mid, hero-front, city-bg, industry-bg written");

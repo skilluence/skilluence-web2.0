@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="rsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#f4f8f3"/>
+      <stop offset="1" stop-color="#edf4ed"/>
+    </linearGradient>
+    <radialGradient id="rsun" cx="0.8" cy="0.05" r="0.55">
+      <stop offset="0" stop-color="#f4f0d4" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#f4f0d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rfade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="rblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="46"/></filter>
+  </defs>
+  <rect width="1920" height="1500" fill="url(#rsky)"/>
+  <rect width="1920" height="1500" fill="url(#rsun)"/>
+  <g transform="rotate(-27 960 750)" filter="url(#rblur)">
+    <rect x="60" y="-600" width="210" height="2800" fill="#d9ead9" opacity="0.55"/>
+    <rect x="400" y="-600" width="110" height="2800" fill="#f2eed2" opacity="0.6"/>
+    <rect x="640" y="-600" width="300" height="2800" fill="#dcebdb" opacity="0.5"/>
+    <rect x="1060" y="-600" width="150" height="2800" fill="#e6f0e0" opacity="0.65"/>
+    <rect x="1330" y="-600" width="90" height="2800" fill="#f2eed2" opacity="0.5"/>
+    <rect x="1560" y="-600" width="260" height="2800" fill="#d5e7d6" opacity="0.5"/>
+  </g>
+  <rect width="1920" height="1500" fill="url(#rfade)"/>
+</svg>

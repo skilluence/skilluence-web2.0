@@ -1,13 +1,14 @@
 import ContactForm from "@/components/ContactForm";
 import ScrollFAQAccordion from "@/components/FAQAccordion/FAQAccordion";
 import FeatureShowcase from "@/components/FeatureShowcase/FeatureShowcase";
+import RouteLine from "@/components/RouteLine";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import { LogoCloud } from "@/components/ui/logo-cloud-3";
 import StudentStruggleCards from "@/components/StudentCards/StudentCards";
 import TestimonialsSection from "@/components/TestimonialsSection/TestimonialsSection";
 import { Timeline } from "@/components/Timeline/Timeline";
 import { serviceDetails } from "@/lib/services";
-import { BadgeCheck, Check, FileSearch, Landmark, Minus, ShieldCheck, X } from "lucide-react";
+import { ArrowUpRight, BadgeCheck, Check, FileSearch, Landmark, Minus, ShieldCheck, X } from "lucide-react";
 import Link from "next/link";
 import styles from "./page.module.css";
 import SiteFooter from "@/components/footer/Footer";
@@ -226,13 +227,17 @@ export default function Home() {
           <p className="eyebrow">Why choose us?</p>
           <h2>Embark on <em>career success</em> with Skilluence.</h2>
         </div>
-        <div className={styles["why-grid"]}>
-          {differentiators.map((item) => (
-            <article className={styles["why-card"]} key={item.title}>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
+        <div className={styles["why-journey"]}>
+          <RouteLine />
+          <div className={styles["why-grid"]}>
+            {differentiators.map((item, index) => (
+              <article className={styles["why-card"]} key={item.title}>
+                <span className={styles["why-step"]} aria-hidden="true">0{index + 1}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -305,8 +310,13 @@ export default function Home() {
             <article className={styles["program-card"]} key={solution.title}>
               <span>0{index + 1}</span>
               <h3>{solution.title}</h3>
-              <p>{solution.text}</p>
-              <Link href={`/our-services/${solution.slug}`} prefetch>Discuss this service</Link>
+              <Link
+                href={`/our-services/${solution.slug}`}
+                prefetch
+                aria-label={`Learn more about ${solution.title}`}
+              >
+                <ArrowUpRight size={18} aria-hidden="true" />
+              </Link>
             </article>
           ))}
         </div>
