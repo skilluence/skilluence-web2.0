@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.4" stop-color="#f3f8f2"/>
+      <stop offset="1" stop-color="#ecf3ec"/>
+    </linearGradient>
+    <radialGradient id="bsun" cx="0.74" cy="0.1" r="0.5">
+      <stop offset="0" stop-color="#f4f1d8" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#f4f1d8" stop-opacity="0"/>
+    </radialGradient>
+    <g id="profile">
+      <rect x="-78" y="-30" width="156" height="60" rx="16" fill="#fbfdfb" stroke="#c9dccd" stroke-width="1.5"/>
+      <circle cx="-48" cy="0" r="15" fill="#dce9de"/>
+      <rect x="-24" y="-12" width="76" height="8" rx="4" fill="#d7e5d9"/>
+      <rect x="-24" y="4" width="48" height="8" rx="4" fill="#e3eee4"/>
+    </g>
+    <g id="company">
+      <rect x="-34" y="-34" width="68" height="68" rx="17" fill="#fbfdfb" stroke="#c9dccd" stroke-width="1.5"/>
+      <rect x="-17" y="-6" width="34" height="22" rx="5" fill="none" stroke="#c2d7c7" stroke-width="3"/>
+      <path d="M-8,-6 v-5 a4,4 0 0 1 4,-4 h8 a4,4 0 0 1 4,4 v5" fill="none" stroke="#c2d7c7" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <rect width="1920" height="1700" fill="url(#bsky)"/>
+  <rect width="1920" height="1700" fill="url(#bsun)"/>
+
+  <g stroke="#cfe0d3" stroke-width="1.8" fill="none" opacity="0.9">
+  <path d="M894,427 Q1059,452 1207,377" />
+  <path d="M1207,377 Q1249,295 1235,205" />
+  <path d="M475,726 Q619,752 751,689" />
+  <path d="M1688,631 Q1738,567 1741,487" />
+  <path d="M385,1069 Q485,912 475,726" />
+  <path d="M1178,1039 Q1356,1044 1503,945" />
+  <path d="M1503,945 Q1639,1054 1814,1064" />
+  <path d="M175,1316 Q173,1438 242,1538" />
+  <path d="M1148,1319 Q1208,1184 1178,1039" />
+  <path d="M1535,1284 Q1645,1275 1730,1204" />
+  <path d="M1730,1204 Q1794,1147 1814,1064" />
+  <path d="M242,1538 Q404,1569 554,1500" />
+  <path d="M1142,1536 Q1180,1428 1148,1319" />
+  <path d="M1430,1577 Q1587,1578 1716,1487" />
+  <path d="M1716,1487 Q1768,1348 1730,1204" />
+  <path d="M1235,205 Q1311,233 1389,211" />
+  </g>
+
+  <use xlink:href="#profile" transform="translate(1206,169) rotate(4.9) scale(0.97)"/>
+  <use xlink:href="#profile" transform="translate(1389,211) rotate(8.4) scale(0.96)"/>
+  <use xlink:href="#profile" transform="translate(1687,68) rotate(-6.0) scale(0.83)"/>
+  <use xlink:href="#profile" transform="translate(208,437) rotate(-8.9) scale(1.33)"/>
+  <use xlink:href="#company" transform="translate(540,418) rotate(6.6) scale(1.01)"/>
+  <use xlink:href="#profile" transform="translate(894,427) rotate(-0.3) scale(1.22)"/>
+  <use xlink:href="#profile" transform="translate(1207,377) rotate(-4.7) scale(1.25)"/>
+  <use xlink:href="#company" transform="translate(1461,432) rotate(-1.7) scale(1.25)"/>
+  <use xlink:href="#profile" transform="translate(1741,487) rotate(-4.3) scale(1.14)"/>
+  <use xlink:href="#profile" transform="translate(76,679) rotate(5.7) scale(1.25)"/>
+  <use xlink:href="#profile" transform="translate(475,726) rotate(8.0) scale(0.96)"/>
+  <use xlink:href="#profile" transform="translate(751,689) rotate(0.3) scale(0.81)"/>
+  <use xlink:href="#profile" transform="translate(1064,761) rotate(2.5) scale(1.38)"/>
+  <use xlink:href="#profile" transform="translate(1688,631) rotate(4.4) scale(0.85)"/>
+  <use xlink:href="#profile" transform="translate(155,1072) rotate(0.4) scale(0.93)"/>
+  <use xlink:href="#profile" transform="translate(385,1069) rotate(1.9) scale(1.25)"/>
+  <use xlink:href="#profile" transform="translate(859,980) rotate(0.4) scale(0.85)"/>
+  <use xlink:href="#profile" transform="translate(1178,1039) rotate(5.0) scale(1.25)"/>
+  <use xlink:href="#company" transform="translate(1503,945) rotate(8.2) scale(1.04)"/>
+  <use xlink:href="#company" transform="translate(1814,1064) rotate(5.0) scale(1.21)"/>
+  <use xlink:href="#profile" transform="translate(175,1316) rotate(3.8) scale(1.02)"/>
+  <use xlink:href="#profile" transform="translate(775,1302) rotate(5.4) scale(0.80)"/>
+  <use xlink:href="#company" transform="translate(1148,1319) rotate(7.1) scale(1.06)"/>
+  <use xlink:href="#profile" transform="translate(1535,1284) rotate(8.5) scale(0.85)"/>
+  <use xlink:href="#company" transform="translate(1730,1204) rotate(-7.2) scale(0.93)"/>
+  <use xlink:href="#company" transform="translate(242,1538) rotate(-8.3) scale(0.90)"/>
+  <use xlink:href="#profile" transform="translate(554,1500) rotate(-8.2) scale(1.39)"/>
+  <use xlink:href="#profile" transform="translate(792,1559) rotate(7.9) scale(0.92)"/>
+  <use xlink:href="#profile" transform="translate(1142,1536) rotate(3.6) scale(1.36)"/>
+  <use xlink:href="#profile" transform="translate(1430,1577) rotate(4.3) scale(1.25)"/>
+  <use xlink:href="#profile" transform="translate(1716,1487) rotate(6.0) scale(1.26)"/>
+  <use xlink:href="#profile" transform="translate(1235,205) rotate(-5) scale(0.95)"/>
+  <use xlink:href="#profile" transform="translate(1520,130) rotate(4) scale(0.85)"/>
+  <use xlink:href="#company" transform="translate(1790,235) rotate(-3) scale(1.0)"/>
+
+  <g stroke="#149d4a" fill="none" opacity="0.4">
+    <path stroke-width="2.5" d="M1235,205 Q1393,225 1520,130"/>
+    <path stroke-width="2.5" d="M1520,130 Q1674,134 1790,235"/>
+  </g>
+  <g fill="none" stroke="#149d4a" stroke-width="2.5" opacity="0.5">
+    <circle cx="1235" cy="205" r="30"/>
+    <circle cx="1520" cy="130" r="30"/>
+    <circle cx="1790" cy="235" r="34"/>
+  </g>
+</svg>
