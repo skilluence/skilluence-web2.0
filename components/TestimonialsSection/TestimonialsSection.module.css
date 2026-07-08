@@ -2,21 +2,12 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding: 94px max(16px, calc((100% - 1180px) / 2));
+  padding: 110px max(16px, calc((100% - 1180px) / 2));
   background:
-    radial-gradient(ellipse 60% 72% at 50% 0%, rgba(23, 117, 74, 0.12), transparent 68%),
-    var(--paper);
-}
-
-.success-stories-section::before {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to right, rgba(23, 117, 74, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(23, 117, 74, 0.035) 1px, transparent 1px);
-  background-size: 42px 42px;
-  content: "";
-  pointer-events: none;
+    linear-gradient(180deg, var(--paper) 0%, rgba(243, 247, 244, 0) 180px),
+    linear-gradient(0deg, var(--paper) 0%, rgba(243, 247, 244, 0) 180px),
+    url("/testimonials-bg.svg") center / cover no-repeat,
+    #eef5ee;
 }
 
 .success-stories-inner {
@@ -129,15 +120,13 @@
 
 .testimonial-story-card {
   width: 100%;
-  border: 1px solid rgba(23, 117, 74, 0.16);
-  border-radius: 28px;
-  background:
-    linear-gradient(to right, rgba(23, 117, 74, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(23, 117, 74, 0.03) 1px, transparent 1px),
-    rgba(255, 255, 255, 0.94);
-  background-size: 30px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.32);
+  backdrop-filter: blur(9px) saturate(160%);
+  -webkit-backdrop-filter: blur(9px) saturate(160%);
   padding: 28px;
-  box-shadow: 0 18px 52px rgba(9, 28, 24, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 18px 52px rgba(9, 28, 24, 0.07);
   cursor: default;
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
@@ -145,7 +134,7 @@
 .testimonial-story-card:hover,
 .testimonial-story-card:focus {
   border-color: rgba(23, 117, 74, 0.32);
-  box-shadow: 0 24px 70px rgba(9, 28, 24, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 24px 70px rgba(9, 28, 24, 0.1);
   outline: none;
 }
 
@@ -155,10 +144,18 @@
 
 .testimonial-story-card p {
   margin: 0;
-  color: var(--muted);
+  color: #3f564c;
   font-size: 16px;
   font-weight: 650;
   line-height: 1.62;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .testimonial-story-card {
+    background: var(--white);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }
 
 .testimonial-story-card footer {

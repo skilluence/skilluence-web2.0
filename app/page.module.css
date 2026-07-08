@@ -8,7 +8,7 @@
   margin: 0;
   padding: 110px max(16px, calc((100% - 1180px) / 2)) 170px;
   background:
-    linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.82) 50px, rgba(255, 255, 255, 0.5) 120px, rgba(255, 255, 255, 0.2) 200px, rgba(255, 255, 255, 0) 290px),
+    linear-gradient(0deg, #edf4ed 0%, rgba(237, 244, 237, 0.68) 100px, rgba(237, 244, 237, 0.3) 210px, rgba(237, 244, 237, 0) 330px),
     linear-gradient(180deg, #0d2226 0%, rgba(13, 34, 38, 0.7) 80px, rgba(13, 34, 38, 0.35) 170px, rgba(13, 34, 38, 0) 280px),
     linear-gradient(180deg, rgba(7, 20, 19, 0.62), rgba(7, 20, 19, 0.5) 45%, rgba(7, 20, 19, 0.68)),
     url("/city-bg.svg") center 68% / cover no-repeat,
@@ -627,7 +627,16 @@
 
 /* ── FAQ Section ── */
 .faq-section {
-  padding-bottom: 48px;
+  width: 100%;
+  max-width: none;
+  padding-right: max(16px, calc((100% - 1180px) / 2));
+  padding-left: max(16px, calc((100% - 1180px) / 2));
+  padding-bottom: 60px;
+  background:
+    linear-gradient(180deg, var(--paper) 0%, rgba(243, 247, 244, 0) 180px),
+    linear-gradient(0deg, var(--paper) 0%, rgba(243, 247, 244, 0) 180px),
+    url("/faq-bg.svg") center / cover no-repeat,
+    #eef5ee;
 }
 
 /* ── Consultation Layout (two-column) ── */
@@ -686,7 +695,7 @@
   width: 100%;
   overflow: hidden;
   padding: 210px max(16px, calc((100% - 1180px) / 2)) 130px;
-  background: url("/hero-bg.svg") center 70% / cover no-repeat, #0d2226;
+  background: url("/city-bg.svg") center 62% / cover no-repeat, #0d2226;
 }
 
 .consultation-section::before {
@@ -730,22 +739,35 @@
   display: block;
   width: min(700px, 100%);
   margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.86);
-  backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
-  color: var(--ink);
+  border: 1px solid var(--glass-dark-border);
+  border-radius: 24px;
+  background: var(--glass-dark);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  color: #eef4f0;
   padding: 34px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 26px 72px rgba(4, 14, 20, 0.35);
+  box-shadow: var(--glass-highlight-dark), 0 26px 64px rgba(4, 14, 20, 0.36);
+}
+
+.consultation-panel form label {
+  color: rgba(226, 236, 231, 0.6);
+  font-weight: 800;
 }
 
 .consultation-reassurance {
   margin: 16px 0 0;
-  color: var(--muted);
+  color: rgba(233, 241, 237, 0.62);
   font-size: 13px;
   font-weight: 700;
   text-align: center;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .consultation-panel {
+    background: #12292f;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }
 
 .consultation-panel .eyebrow {
@@ -776,21 +798,38 @@
   background: transparent;
 }
 
-.consultation-panel input {
-  min-height: 54px;
-  border: 1px solid rgba(23, 117, 74, 0.18);
+.consultation-panel form input,
+.consultation-panel form select,
+.consultation-panel form textarea {
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 14px;
-  background: var(--white);
-  color: var(--ink);
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #eef4f0;
   font-weight: 650;
   outline: none;
-  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
 }
 
-.consultation-panel input:focus {
-  border-color: rgba(23, 117, 74, 0.55);
-  background: var(--white);
-  box-shadow: 0 0 0 4px rgba(23, 117, 74, 0.12);
+.consultation-panel form input::placeholder,
+.consultation-panel form textarea::placeholder {
+  color: rgba(226, 236, 231, 0.42);
+}
+
+.consultation-panel form select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #9fd9b8 50%),
+    linear-gradient(135deg, #9fd9b8 50%, transparent 50%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
+}
+
+.consultation-panel form input:focus,
+.consultation-panel form select:focus,
+.consultation-panel form textarea:focus {
+  border-color: rgba(20, 157, 74, 0.55);
+  background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 0 0 4px rgba(20, 157, 74, 0.14);
 }
 
 .consultation-panel button {

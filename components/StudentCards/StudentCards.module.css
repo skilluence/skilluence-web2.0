@@ -2,15 +2,15 @@
   position: relative;
   overflow: hidden;
   padding: 74px max(16px, calc((100% - 1180px) / 2)) 96px;
-  background: var(--white);
+  background: #edf4ed;
   color: var(--ink);
 }
 
 .struggle-bento-bg {
   position: absolute;
   inset: 0;
-  background: url("/bento-bg.svg") center top / cover no-repeat, #f2f7f1;
-  mask-image: linear-gradient(180deg, transparent, black 9%, black 91%, transparent);
+  background: url("/bento-bg.svg") center top / cover no-repeat, #edf4ed;
+  mask-image: linear-gradient(180deg, transparent, black 13%, black 90%, transparent);
   pointer-events: none;
 }
 

@@ -75,9 +75,9 @@ function makeScene({ seed, H, clear, match }) {
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.4" stop-color="#f3f8f2"/>
-      <stop offset="1" stop-color="#ecf3ec"/>
+      <stop offset="0" stop-color="#edf4ed"/>
+      <stop offset="0.4" stop-color="#eef5ee"/>
+      <stop offset="1" stop-color="#eaf2ea"/>
     </linearGradient>
     <radialGradient id="bsun" cx="0.74" cy="0.1" r="0.5">
       <stop offset="0" stop-color="#f4f1d8" stop-opacity="0.7"/>
@@ -350,8 +350,118 @@ ${checkpoints}
 `;
 }
 
+/*
+ * Testimonials background: soft oversized editorial quotation marks drifting
+ * as watermarks — the unmistakable signal for a wall of voices. A few render
+ * in brand green. Top-centre band kept clear for the heading + flagship quote.
+ */
+function makeQuotes() {
+  let s = 14082026;
+  const rand = () => {
+    s = (s * 1664525 + 1013904223) % 4294967296;
+    return s / 4294967296;
+  };
+  const between = (a, b) => a + rand() * (b - a);
+  const W = 1920;
+  const H = 1500;
+
+  const marks = [];
+  const COLS = 5;
+  const ROWS = 4;
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      if (rand() < 0.14) continue;
+      const x = (c + 0.5) * (W / COLS) + between(-90, 90) + (r % 2 ? W / COLS / 2 : 0);
+      const y = (r + 0.5) * (H / ROWS) + between(-70, 70);
+      if (y < 520 && x > 470 && x < 1450) continue; // heading + flagship band
+      const size = Math.round(between(90, 200));
+      const rot = between(-10, 10).toFixed(1);
+      const green = rand() < 0.1;
+      const glyph = rand() < 0.75 ? "“" : "”";
+      marks.push(
+        `  <text x="${Math.round(x)}" y="${Math.round(y)}" font-size="${size}" transform="rotate(${rot} ${Math.round(x)} ${Math.round(y)})"${green ? ' fill="#149d4a" opacity="0.14"' : ""}>${glyph}</text>`
+      );
+    }
+  }
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="qsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f7f4"/>
+      <stop offset="0.5" stop-color="#eef5ee"/>
+      <stop offset="1" stop-color="#f1f6f1"/>
+    </linearGradient>
+    <radialGradient id="qsun" cx="0.5" cy="0.16" r="0.55">
+      <stop offset="0" stop-color="#f2efd6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f2efd6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="url(#qsky)"/>
+  <rect width="${W}" height="${H}" fill="url(#qsun)"/>
+  <g fill="#d7e6da" font-family="Georgia, 'Times New Roman', serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+${marks.join("\n")}
+  </g>
+</svg>
+`;
+}
+
+/*
+ * FAQ background: soft oversized question marks drifting as watermarks — the
+ * plain-language symbol of a questions section, parallel to the testimonials
+ * quote marks. A few render in brand green. Left heading band kept clear.
+ */
+function makeQuestions() {
+  let s = 15082026;
+  const rand = () => {
+    s = (s * 1664525 + 1013904223) % 4294967296;
+    return s / 4294967296;
+  };
+  const between = (a, b) => a + rand() * (b - a);
+  const W = 1920;
+  const H = 1300;
+
+  const marks = [];
+  const COLS = 8;
+  const ROWS = 6;
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      if (rand() < 0.08) continue;
+      const x = (c + 0.5) * (W / COLS) + between(-70, 70) + (r % 2 ? W / COLS / 2 : 0);
+      const y = (r + 0.5) * (H / ROWS) + between(-55, 55);
+      const size = Math.round(between(64, 150));
+      const rot = between(-14, 14).toFixed(1);
+      const green = rand() < 0.1;
+      marks.push(
+        `  <text x="${Math.round(x)}" y="${Math.round(y)}" font-size="${size}" transform="rotate(${rot} ${Math.round(x)} ${Math.round(y)})"${green ? ' fill="#149d4a" opacity="0.16"' : ""}>?</text>`
+      );
+    }
+  }
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="fqsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f7f4"/>
+      <stop offset="0.5" stop-color="#eef5ee"/>
+      <stop offset="1" stop-color="#f1f6f1"/>
+    </linearGradient>
+    <radialGradient id="fqsun" cx="0.85" cy="0.12" r="0.55">
+      <stop offset="0" stop-color="#f2efd6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f2efd6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="url(#fqsky)"/>
+  <rect width="${W}" height="${H}" fill="url(#fqsun)"/>
+  <g fill="#bcd2c1" font-family="Georgia, 'Times New Roman', serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+${marks.join("\n")}
+  </g>
+</svg>
+`;
+}
+
 writeFileSync(new URL("../public/bento-bg.svg", import.meta.url), bento);
 writeFileSync(new URL("../public/comparison-bg.svg", import.meta.url), comparison);
 writeFileSync(new URL("../public/services-bg.svg", import.meta.url), makeToolkit());
 writeFileSync(new URL("../public/process-bg.svg", import.meta.url), makeTrailMap());
-console.log("bento-bg.svg + comparison-bg.svg + services-bg.svg + process-bg.svg written");
+writeFileSync(new URL("../public/testimonials-bg.svg", import.meta.url), makeQuotes());
+writeFileSync(new URL("../public/faq-bg.svg", import.meta.url), makeQuestions());
+console.log("bento + comparison + services + process + testimonials + faq backgrounds written");
