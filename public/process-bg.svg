@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="psky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f6faf5"/>
-      <stop offset="0.5" stop-color="#eef5ee"/>
+      <stop offset="0.5" stop-color="#ebf7f1"/>
       <stop offset="1" stop-color="#f3f8f2"/>
     </linearGradient>
     <radialGradient id="psun" cx="0.5" cy="0" r="0.6">
@@ -39,13 +39,13 @@
     <path d="M817,1330 L839,1385 L856,1444 L870,1507 L881,1574 L884,1644 L871,1711 L835,1768 L775,1804 L696,1816 L611,1808 L531,1788 L465,1771 L414,1768 L376,1785 L341,1817 L303,1855 L259,1885 L210,1901 L160,1902 L111,1893 L62,1882 L12,1875 L-42,1871 L-100,1866 L-157,1854 L-209,1830 L-253,1793 L-290,1749 L-323,1703 L-359,1659 L-401,1615 L-445,1568 L-481,1515 L-498,1455 L-485,1391 L-443,1330 L-379,1278 L-308,1239 L-247,1207 L-208,1178 L-192,1143 L-193,1098 L-200,1043 L-202,984 L-194,926 L-175,871 L-148,819 L-114,769 L-75,718 L-30,670 L23,631 L83,611 L147,614 L210,641 L267,684 L316,729 L361,765 L408,786 L459,796 L514,803 L567,819 L611,852 L638,902 L647,963 L645,1025 L642,1080 L649,1125 L670,1162 L705,1197 L746,1235 L785,1280 L817,1330 Z"/>
   </g>
   <path d="M130,190 C470,120 770,300 905,520 C1050,740 850,900 965,1075 C1075,1245 1210,1300 1430,1345 C1540,1367 1620,1385 1685,1398"
-    stroke="#149d4a" stroke-opacity="0.32" stroke-width="2.5" stroke-dasharray="2 11" stroke-linecap="round" fill="none"/>
-  <circle cx="470" cy="250" r="5" fill="#149d4a" opacity="0.4"/>
-  <circle cx="905" cy="520" r="5" fill="#149d4a" opacity="0.4"/>
-  <circle cx="965" cy="1075" r="5" fill="#149d4a" opacity="0.4"/>
-  <circle cx="1430" cy="1345" r="5" fill="#149d4a" opacity="0.4"/>
-  <g stroke="#149d4a" stroke-opacity="0.55" stroke-width="2.5" fill="none">
+    stroke="#0b9a48" stroke-opacity="0.32" stroke-width="2.5" stroke-dasharray="2 11" stroke-linecap="round" fill="none"/>
+  <circle cx="470" cy="250" r="5" fill="#0b9a48" opacity="0.4"/>
+  <circle cx="905" cy="520" r="5" fill="#0b9a48" opacity="0.4"/>
+  <circle cx="965" cy="1075" r="5" fill="#0b9a48" opacity="0.4"/>
+  <circle cx="1430" cy="1345" r="5" fill="#0b9a48" opacity="0.4"/>
+  <g stroke="#0b9a48" stroke-opacity="0.55" stroke-width="2.5" fill="none">
     <line x1="1700" y1="1398" x2="1700" y2="1358"/>
-    <path d="M1700,1358 l30,10 l-30,10 z" fill="#149d4a" fill-opacity="0.4"/>
+    <path d="M1700,1358 l30,10 l-30,10 z" fill="#0b9a48" fill-opacity="0.4"/>
   </g>
 </svg>

@@ -5,9 +5,9 @@
   padding: 200px max(16px, calc((100% - 1180px) / 2)) 96px;
   background:
     linear-gradient(180deg, #f3f7f4 0%, rgba(243, 247, 244, 0.8) 55px, rgba(243, 247, 244, 0.45) 130px, rgba(243, 247, 244, 0.18) 215px, rgba(243, 247, 244, 0) 310px),
-    radial-gradient(ellipse 90% 60% at 18% 0%, rgba(20, 157, 74, 0.12), transparent 60%),
-    radial-gradient(ellipse 80% 55% at 88% 100%, rgba(23, 117, 74, 0.16), transparent 62%),
-    #0d2226;
+    radial-gradient(ellipse 90% 60% at 18% 0%, rgba(11, 154, 72, 0.12), transparent 60%),
+    radial-gradient(ellipse 80% 55% at 88% 100%, rgba(7, 110, 52, 0.16), transparent 62%),
+    #0f1e30;
   color: #eef4f0;
 }
 
@@ -49,7 +49,7 @@
   background: var(--glass-dark);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
-  box-shadow: var(--glass-highlight-dark), 0 24px 60px rgba(4, 14, 20, 0.3);
+  box-shadow: var(--glass-highlight-dark), 0 24px 60px rgba(4, 11, 20, 0.3);
   padding: 30px 30px 26px;
   transition: border-color 200ms ease, transform 200ms ease;
 }
@@ -78,7 +78,7 @@
   margin-top: auto;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  background: rgba(6, 20, 26, 0.5);
+  background: rgba(6, 15, 26, 0.5);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
   padding: 20px;
 }
@@ -132,7 +132,7 @@
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--green), #4fd486);
+  background: linear-gradient(90deg, var(--green), #34c173);
 }
 
 .score-checks {
@@ -183,14 +183,14 @@
 
 .is-live .timeline-dot {
   background: var(--green);
-  box-shadow: 0 0 0 0 rgba(20, 157, 74, 0.55);
+  box-shadow: 0 0 0 0 rgba(11, 154, 72, 0.55);
   animation: pulse 2.2s ease-out infinite;
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(20, 157, 74, 0.55); }
-  70% { box-shadow: 0 0 0 9px rgba(20, 157, 74, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(20, 157, 74, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(11, 154, 72, 0.55); }
+  70% { box-shadow: 0 0 0 9px rgba(11, 154, 72, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(11, 154, 72, 0); }
 }
 
 .timeline-time {
@@ -278,7 +278,7 @@
   top: 50%;
   width: 14px;
   height: 14px;
-  border: 2px solid #0d2226;
+  border: 2px solid #0f1e30;
   border-radius: 50%;
   background: #f4f8f4;
   transform: translate(-50%, -50%);
@@ -344,7 +344,7 @@
 
 @media (prefers-reduced-transparency: reduce) {
   .feature-card {
-    background: #12292f;
+    background: #121f2f;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }

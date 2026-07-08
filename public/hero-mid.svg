@@ -5,7 +5,7 @@
   </defs>
 
   <g filter="url(#hmid)">
-    <g fill="#42615b">
+    <g fill="#425061">
     <rect x="-50" y="647" width="117" height="338"/>
     <rect x="92" y="672" width="53" height="313"/>
     <rect x="104" y="655" width="30" height="30"/>
@@ -93,5 +93,5 @@
     <rect x="1963" y="689" width="6" height="9" fill="#f0e6ba" opacity="0.37"/>
     </g>
   </g>
-  <rect x="-100" y="800" width="2120" height="150" fill="#d3dfcd" opacity="0.26" filter="url(#hhaze2)"/>
+  <rect x="-100" y="800" width="2120" height="150" fill="#d1d6db" opacity="0.26" filter="url(#hhaze2)"/>
 </svg>

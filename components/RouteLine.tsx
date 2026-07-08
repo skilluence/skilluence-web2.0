@@ -18,12 +18,12 @@ export default function RouteLine() {
       <svg viewBox="0 0 1180 480" fill="none" preserveAspectRatio="xMidYMid meet">
         <defs>
           <linearGradient id="routeGrad" x1="0" y1="480" x2="1180" y2="0" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stopColor="#17754a" stopOpacity="0.3" />
-            <stop offset="1" stopColor="#149d4a" stopOpacity="0.65" />
+            <stop offset="0" stopColor="#076e34" stopOpacity="0.3" />
+            <stop offset="1" stopColor="#0b9a48" stopOpacity="0.65" />
           </linearGradient>
         </defs>
-        <circle cx="30" cy="434" r="7" fill="#149d4a" />
-        <circle cx="30" cy="434" r="13" fill="none" stroke="#149d4a" strokeOpacity="0.35" strokeWidth="2" />
+        <circle cx="30" cy="434" r="7" fill="#0b9a48" />
+        <circle cx="30" cy="434" r="13" fill="none" stroke="#0b9a48" strokeOpacity="0.35" strokeWidth="2" />
         <motion.path
           d="M30 434 C140 434 150 388 230 358 C340 316 430 296 560 258 C690 220 770 186 880 150 C965 122 1045 96 1130 74"
           stroke="url(#routeGrad)"
@@ -43,8 +43,8 @@ export default function RouteLine() {
             transition={{ delay: 0.5 + i * 0.45, duration: 0.4 }}
             style={{ transformOrigin: `${point.cx}px ${point.cy}px` }}
           >
-            <circle cx={point.cx} cy={point.cy} r="8" fill="var(--paper)" stroke="#149d4a" strokeWidth="2" />
-            <circle cx={point.cx} cy={point.cy} r="3" fill="#149d4a" />
+            <circle cx={point.cx} cy={point.cy} r="8" fill="var(--paper)" stroke="#0b9a48" strokeWidth="2" />
+            <circle cx={point.cx} cy={point.cy} r="3" fill="#0b9a48" />
           </motion.g>
         ))}
       </svg>

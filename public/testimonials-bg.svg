@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="qsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f3f7f4"/>
-      <stop offset="0.5" stop-color="#eef5ee"/>
+      <stop offset="0.5" stop-color="#ebf7f1"/>
       <stop offset="1" stop-color="#f1f6f1"/>
     </linearGradient>
     <radialGradient id="qsun" cx="0.5" cy="0.16" r="0.55">
@@ -22,7 +22,7 @@
   <text x="488" y="903" font-size="103" transform="rotate(6.4 488 903)">”</text>
   <text x="902" y="876" font-size="133" transform="rotate(2.5 902 876)">“</text>
   <text x="1313" y="962" font-size="96" transform="rotate(9.7 1313 962)">”</text>
-  <text x="1753" y="869" font-size="105" transform="rotate(9.3 1753 869)" fill="#149d4a" opacity="0.14">“</text>
+  <text x="1753" y="869" font-size="105" transform="rotate(9.3 1753 869)" fill="#0b9a48" opacity="0.14">“</text>
   <text x="372" y="1249" font-size="164" transform="rotate(1.2 372 1249)">“</text>
   <text x="819" y="1257" font-size="193" transform="rotate(-3.7 819 1257)">“</text>
   <text x="1219" y="1381" font-size="98" transform="rotate(-2.2 1219 1381)">“</text>

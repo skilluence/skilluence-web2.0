@@ -62,11 +62,11 @@ function makeScene({ seed, H, clear, match }) {
   }
 
   const [t1, t2, t3] = matchNodes;
-  const thread = `  <g stroke="#149d4a" fill="none" opacity="0.4">
+  const thread = `  <g stroke="#0b9a48" fill="none" opacity="0.4">
     <path stroke-width="2.5" d="${curve(t1, t2, 0.2)}"/>
     <path stroke-width="2.5" d="${curve(t2, t3, -0.18)}"/>
   </g>
-  <g fill="none" stroke="#149d4a" stroke-width="2.5" opacity="0.5">
+  <g fill="none" stroke="#0b9a48" stroke-width="2.5" opacity="0.5">
     <circle cx="${t1.x}" cy="${t1.y}" r="30"/>
     <circle cx="${t2.x}" cy="${t2.y}" r="30"/>
     <circle cx="${t3.x}" cy="${t3.y}" r="34"/>
@@ -75,9 +75,9 @@ function makeScene({ seed, H, clear, match }) {
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#edf4ed"/>
-      <stop offset="0.4" stop-color="#eef5ee"/>
-      <stop offset="1" stop-color="#eaf2ea"/>
+      <stop offset="0" stop-color="#eaf7f0"/>
+      <stop offset="0.4" stop-color="#ebf7f1"/>
+      <stop offset="1" stop-color="#e7f4ed"/>
     </linearGradient>
     <radialGradient id="bsun" cx="0.74" cy="0.1" r="0.5">
       <stop offset="0" stop-color="#f4f1d8" stop-opacity="0.7"/>
@@ -145,7 +145,7 @@ const comparison = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 15
     <linearGradient id="rsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffffff"/>
       <stop offset="0.45" stop-color="#f4f8f3"/>
-      <stop offset="1" stop-color="#edf4ed"/>
+      <stop offset="1" stop-color="#eaf7f0"/>
     </linearGradient>
     <radialGradient id="rsun" cx="0.8" cy="0.05" r="0.55">
       <stop offset="0" stop-color="#f4f0d4" stop-opacity="0.75"/>
@@ -196,7 +196,7 @@ function makeToolkit() {
       const g = glyphs[gi++ % glyphs.length];
       const green = rand() < 0.05;
       items.push(
-        `    <use xlink:href="#${g}" transform="translate(${Math.round(x)},${Math.round(y)}) rotate(${between(-20, 20).toFixed(1)}) scale(${between(0.34, 0.52).toFixed(2)})"${green ? ' color="#149d4a" opacity="0.32"' : ""}/>`
+        `    <use xlink:href="#${g}" transform="translate(${Math.round(x)},${Math.round(y)}) rotate(${between(-20, 20).toFixed(1)}) scale(${between(0.34, 0.52).toFixed(2)})"${green ? ' color="#0b9a48" opacity="0.32"' : ""}/>`
       );
     }
   }
@@ -206,7 +206,7 @@ function makeToolkit() {
     <linearGradient id="tsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#e9f1ec"/>
       <stop offset="0.5" stop-color="#f3f8f2"/>
-      <stop offset="1" stop-color="#eef5ee"/>
+      <stop offset="1" stop-color="#ebf7f1"/>
     </linearGradient>
     <radialGradient id="tsun" cx="0.2" cy="0.08" r="0.5">
       <stop offset="0" stop-color="#f4f1d8" stop-opacity="0.6"/>
@@ -319,14 +319,14 @@ function makeTrailMap() {
     [965, 1075],
     [1430, 1345],
   ]
-    .map(([x, y]) => `  <circle cx="${x}" cy="${y}" r="5" fill="#149d4a" opacity="0.4"/>`)
+    .map(([x, y]) => `  <circle cx="${x}" cy="${y}" r="5" fill="#0b9a48" opacity="0.4"/>`)
     .join("\n");
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="psky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f6faf5"/>
-      <stop offset="0.5" stop-color="#eef5ee"/>
+      <stop offset="0.5" stop-color="#ebf7f1"/>
       <stop offset="1" stop-color="#f3f8f2"/>
     </linearGradient>
     <radialGradient id="psun" cx="0.5" cy="0" r="0.6">
@@ -340,11 +340,11 @@ function makeTrailMap() {
 ${contours.join("\n")}
   </g>
   <path d="M130,190 C470,120 770,300 905,520 C1050,740 850,900 965,1075 C1075,1245 1210,1300 1430,1345 C1540,1367 1620,1385 1685,1398"
-    stroke="#149d4a" stroke-opacity="0.32" stroke-width="2.5" stroke-dasharray="2 11" stroke-linecap="round" fill="none"/>
+    stroke="#0b9a48" stroke-opacity="0.32" stroke-width="2.5" stroke-dasharray="2 11" stroke-linecap="round" fill="none"/>
 ${checkpoints}
-  <g stroke="#149d4a" stroke-opacity="0.55" stroke-width="2.5" fill="none">
+  <g stroke="#0b9a48" stroke-opacity="0.55" stroke-width="2.5" fill="none">
     <line x1="1700" y1="1398" x2="1700" y2="1358"/>
-    <path d="M1700,1358 l30,10 l-30,10 z" fill="#149d4a" fill-opacity="0.4"/>
+    <path d="M1700,1358 l30,10 l-30,10 z" fill="#0b9a48" fill-opacity="0.4"/>
   </g>
 </svg>
 `;
@@ -379,7 +379,7 @@ function makeQuotes() {
       const green = rand() < 0.1;
       const glyph = rand() < 0.75 ? "“" : "”";
       marks.push(
-        `  <text x="${Math.round(x)}" y="${Math.round(y)}" font-size="${size}" transform="rotate(${rot} ${Math.round(x)} ${Math.round(y)})"${green ? ' fill="#149d4a" opacity="0.14"' : ""}>${glyph}</text>`
+        `  <text x="${Math.round(x)}" y="${Math.round(y)}" font-size="${size}" transform="rotate(${rot} ${Math.round(x)} ${Math.round(y)})"${green ? ' fill="#0b9a48" opacity="0.14"' : ""}>${glyph}</text>`
       );
     }
   }
@@ -388,7 +388,7 @@ function makeQuotes() {
   <defs>
     <linearGradient id="qsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f3f7f4"/>
-      <stop offset="0.5" stop-color="#eef5ee"/>
+      <stop offset="0.5" stop-color="#ebf7f1"/>
       <stop offset="1" stop-color="#f1f6f1"/>
     </linearGradient>
     <radialGradient id="qsun" cx="0.5" cy="0.16" r="0.55">
@@ -432,7 +432,7 @@ function makeQuestions() {
       const rot = between(-14, 14).toFixed(1);
       const green = rand() < 0.1;
       marks.push(
-        `  <text x="${Math.round(x)}" y="${Math.round(y)}" font-size="${size}" transform="rotate(${rot} ${Math.round(x)} ${Math.round(y)})"${green ? ' fill="#149d4a" opacity="0.16"' : ""}>?</text>`
+        `  <text x="${Math.round(x)}" y="${Math.round(y)}" font-size="${size}" transform="rotate(${rot} ${Math.round(x)} ${Math.round(y)})"${green ? ' fill="#0b9a48" opacity="0.16"' : ""}>?</text>`
       );
     }
   }
@@ -441,7 +441,7 @@ function makeQuestions() {
   <defs>
     <linearGradient id="fqsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f3f7f4"/>
-      <stop offset="0.5" stop-color="#eef5ee"/>
+      <stop offset="0.5" stop-color="#ebf7f1"/>
       <stop offset="1" stop-color="#f1f6f1"/>
     </linearGradient>
     <radialGradient id="fqsun" cx="0.85" cy="0.12" r="0.55">

@@ -3,7 +3,7 @@
     <linearGradient id="rsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffffff"/>
       <stop offset="0.45" stop-color="#f4f8f3"/>
-      <stop offset="1" stop-color="#edf4ed"/>
+      <stop offset="1" stop-color="#eaf7f0"/>
     </linearGradient>
     <radialGradient id="rsun" cx="0.8" cy="0.05" r="0.55">
       <stop offset="0" stop-color="#f4f0d4" stop-opacity="0.75"/>

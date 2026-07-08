@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="fqsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f3f7f4"/>
-      <stop offset="0.5" stop-color="#eef5ee"/>
+      <stop offset="0.5" stop-color="#ebf7f1"/>
       <stop offset="1" stop-color="#f1f6f1"/>
     </linearGradient>
     <radialGradient id="fqsun" cx="0.85" cy="0.12" r="0.55">
@@ -22,7 +22,7 @@
   <text x="241" y="309" font-size="95" transform="rotate(-11.6 241 309)">?</text>
   <text x="473" y="291" font-size="71" transform="rotate(4.6 473 291)">?</text>
   <text x="770" y="326" font-size="83" transform="rotate(-4.8 770 326)">?</text>
-  <text x="923" y="379" font-size="127" transform="rotate(-12.5 923 379)" fill="#149d4a" opacity="0.16">?</text>
+  <text x="923" y="379" font-size="127" transform="rotate(-12.5 923 379)" fill="#0b9a48" opacity="0.16">?</text>
   <text x="1214" y="373" font-size="66" transform="rotate(-0.7 1214 373)">?</text>
   <text x="1378" y="333" font-size="69" transform="rotate(-13.2 1378 333)">?</text>
   <text x="1629" y="310" font-size="71" transform="rotate(9.9 1629 310)">?</text>
@@ -30,12 +30,12 @@
   <text x="107" y="498" font-size="91" transform="rotate(-4.9 107 498)">?</text>
   <text x="350" y="526" font-size="92" transform="rotate(-7.1 350 526)">?</text>
   <text x="632" y="587" font-size="145" transform="rotate(4.0 632 587)">?</text>
-  <text x="820" y="530" font-size="144" transform="rotate(-8.6 820 530)" fill="#149d4a" opacity="0.16">?</text>
-  <text x="1107" y="489" font-size="136" transform="rotate(-2.3 1107 489)" fill="#149d4a" opacity="0.16">?</text>
+  <text x="820" y="530" font-size="144" transform="rotate(-8.6 820 530)" fill="#0b9a48" opacity="0.16">?</text>
+  <text x="1107" y="489" font-size="136" transform="rotate(-2.3 1107 489)" fill="#0b9a48" opacity="0.16">?</text>
   <text x="1524" y="586" font-size="110" transform="rotate(7.9 1524 586)">?</text>
   <text x="1773" y="522" font-size="99" transform="rotate(-10.1 1773 522)">?</text>
   <text x="194" y="777" font-size="126" transform="rotate(-8.6 194 777)">?</text>
-  <text x="495" y="781" font-size="87" transform="rotate(-6.0 495 781)" fill="#149d4a" opacity="0.16">?</text>
+  <text x="495" y="781" font-size="87" transform="rotate(-6.0 495 781)" fill="#0b9a48" opacity="0.16">?</text>
   <text x="694" y="806" font-size="136" transform="rotate(-5.2 694 806)">?</text>
   <text x="1000" y="726" font-size="149" transform="rotate(2.5 1000 726)">?</text>
   <text x="1222" y="810" font-size="149" transform="rotate(4.6 1222 810)">?</text>
@@ -49,7 +49,7 @@
   <text x="1105" y="980" font-size="137" transform="rotate(6.3 1105 980)">?</text>
   <text x="1305" y="937" font-size="78" transform="rotate(10.0 1305 937)">?</text>
   <text x="1558" y="1000" font-size="134" transform="rotate(-0.3 1558 1000)">?</text>
-  <text x="1746" y="1025" font-size="141" transform="rotate(8.8 1746 1025)" fill="#149d4a" opacity="0.16">?</text>
+  <text x="1746" y="1025" font-size="141" transform="rotate(8.8 1746 1025)" fill="#0b9a48" opacity="0.16">?</text>
   <text x="232" y="1172" font-size="99" transform="rotate(4.8 232 1172)">?</text>
   <text x="435" y="1199" font-size="75" transform="rotate(9.8 435 1199)">?</text>
   <text x="749" y="1166" font-size="71" transform="rotate(-10.8 749 1166)">?</text>

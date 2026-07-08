@@ -2,14 +2,14 @@
   position: relative;
   overflow: hidden;
   padding: 74px max(16px, calc((100% - 1180px) / 2)) 96px;
-  background: #edf4ed;
+  background: #eaf7f0;
   color: var(--ink);
 }
 
 .struggle-bento-bg {
   position: absolute;
   inset: 0;
-  background: url("/bento-bg.svg") center top / cover no-repeat, #edf4ed;
+  background: url("/bento-bg.svg") center top / cover no-repeat, #eaf7f0;
   mask-image: linear-gradient(180deg, transparent, black 13%, black 90%, transparent);
   pointer-events: none;
 }
@@ -23,7 +23,7 @@
   display: block;
   max-width: 100%;
   margin-bottom: 22px;
-  border-bottom: 1px solid rgba(23, 117, 74, 0.16);
+  border-bottom: 1px solid rgba(7, 110, 52, 0.16);
   padding-bottom: 18px;
 }
 
@@ -61,7 +61,7 @@
   backdrop-filter: blur(9px) saturate(160%);
   -webkit-backdrop-filter: blur(9px) saturate(160%);
   padding: 24px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 14px 44px rgba(9, 28, 24, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 14px 44px rgba(9, 18, 28, 0.08);
   transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 
@@ -83,18 +83,18 @@
 
 .struggle-bento-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(23, 117, 74, 0.3);
-  box-shadow: var(--glass-highlight), 0 22px 62px rgba(9, 28, 24, 0.09);
+  border-color: rgba(7, 110, 52, 0.3);
+  box-shadow: var(--glass-highlight), 0 22px 62px rgba(9, 18, 28, 0.09);
 }
 
 /* dark pine variant */
 .struggle-bento-card.is-dark {
   border-color: var(--glass-dark-border);
   background:
-    radial-gradient(ellipse 90% 70% at 85% 0%, rgba(20, 157, 74, 0.14), transparent 60%),
-    #0d2226;
+    radial-gradient(ellipse 90% 70% at 85% 0%, rgba(11, 154, 72, 0.14), transparent 60%),
+    #0f1e30;
   color: #eef4f0;
-  box-shadow: var(--glass-highlight-dark), 0 20px 56px rgba(4, 14, 20, 0.28);
+  box-shadow: var(--glass-highlight-dark), 0 20px 56px rgba(4, 11, 20, 0.28);
 }
 
 .struggle-bento-card.is-dark:hover {
@@ -104,7 +104,7 @@
 /* soft green tint variant */
 .struggle-bento-card.is-tint {
   background:
-    linear-gradient(120deg, rgba(20, 157, 74, 0.12), rgba(23, 117, 74, 0.04) 60%),
+    linear-gradient(120deg, rgba(11, 154, 72, 0.12), rgba(7, 110, 52, 0.04) 60%),
     rgba(255, 255, 255, 0.2);
 }
 
@@ -120,7 +120,7 @@
   height: 44px;
   flex: 0 0 auto;
   place-items: center;
-  border: 1px solid rgba(23, 117, 74, 0.18);
+  border: 1px solid rgba(7, 110, 52, 0.18);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.78);
   color: var(--green-dark);
@@ -129,7 +129,7 @@
 .is-dark .struggle-bento-icon {
   border-color: rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.08);
-  color: #4fd486;
+  color: #34c173;
 }
 
 .struggle-bento-icon svg {
@@ -147,7 +147,7 @@
 }
 
 .is-dark .struggle-bento-top span {
-  color: #4fd486;
+  color: #34c173;
 }
 
 .struggle-bento-body h3 {
@@ -177,7 +177,7 @@
 .viz-scatter {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  background: rgba(6, 20, 26, 0.55);
+  background: rgba(6, 15, 26, 0.55);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
   padding: 18px;
 }
@@ -201,9 +201,9 @@
 }
 
 .viz-scatter span.is-hit {
-  border-color: rgba(20, 157, 74, 0.6);
-  background: rgba(20, 157, 74, 0.22);
-  color: #4fd486;
+  border-color: rgba(11, 154, 72, 0.6);
+  background: rgba(11, 154, 72, 0.22);
+  color: #34c173;
 }
 
 .viz-scatter p {
@@ -227,21 +227,21 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  border: 1px dashed rgba(9, 28, 24, 0.22);
+  border: 1px dashed rgba(9, 18, 28, 0.22);
   border-radius: 999px;
   padding: 9px 14px;
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
   text-decoration: line-through;
-  text-decoration-color: rgba(9, 28, 24, 0.3);
+  text-decoration-color: rgba(9, 18, 28, 0.3);
 }
 
 .viz-missing li span {
   width: 7px;
   height: 7px;
   flex: 0 0 auto;
-  border: 1.5px solid rgba(9, 28, 24, 0.35);
+  border: 1.5px solid rgba(9, 18, 28, 0.35);
   border-radius: 50%;
 }
 
@@ -254,13 +254,13 @@
 .viz-resume span {
   height: 9px;
   border-radius: 999px;
-  background: rgba(9, 28, 24, 0.12);
+  background: rgba(9, 18, 28, 0.12);
 }
 
 .viz-resume .viz-line-wide {
   width: 55%;
   height: 12px;
-  background: rgba(9, 28, 24, 0.2);
+  background: rgba(9, 18, 28, 0.2);
 }
 
 .viz-resume .viz-line-gap {
@@ -277,7 +277,7 @@
 }
 
 .viz-skills span {
-  border: 1.5px dashed rgba(9, 28, 24, 0.25);
+  border: 1.5px dashed rgba(9, 18, 28, 0.25);
   border-radius: 999px;
   padding: 7px 13px;
   color: rgba(90, 113, 104, 0.75);
@@ -286,8 +286,8 @@
 }
 
 .viz-skills span.is-present {
-  border: 1px solid rgba(23, 117, 74, 0.3);
-  background: rgba(23, 117, 74, 0.08);
+  border: 1px solid rgba(7, 110, 52, 0.3);
+  background: rgba(7, 110, 52, 0.08);
   color: var(--green-dark);
 }
 
@@ -297,7 +297,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  border: 1px solid rgba(9, 28, 24, 0.12);
+  border: 1px solid rgba(9, 18, 28, 0.12);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.6);
   padding: 12px 14px;
@@ -315,9 +315,9 @@
   height: 22px;
   flex: 0 0 auto;
   align-items: center;
-  border: 1px solid rgba(9, 28, 24, 0.2);
+  border: 1px solid rgba(9, 18, 28, 0.2);
   border-radius: 999px;
-  background: rgba(9, 28, 24, 0.08);
+  background: rgba(9, 18, 28, 0.08);
   padding: 2px;
 }
 
@@ -325,7 +325,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: rgba(9, 28, 24, 0.35);
+  background: rgba(9, 18, 28, 0.35);
 }
 
 /* ── viz: brand mismatch rows ── */
@@ -342,7 +342,7 @@
   align-items: baseline;
   justify-content: space-between;
   gap: 10px;
-  border-bottom: 1px dashed rgba(9, 28, 24, 0.14);
+  border-bottom: 1px dashed rgba(9, 18, 28, 0.14);
   padding-bottom: 6px;
 }
 
@@ -362,7 +362,7 @@
 
 .viz-brand li:nth-child(2) strong,
 .viz-brand li:nth-child(3) strong {
-  color: rgba(9, 28, 24, 0.5);
+  color: rgba(9, 18, 28, 0.5);
   text-decoration: underline wavy rgba(184, 134, 11, 0.5) 1px;
   text-underline-offset: 3px;
 }
@@ -385,11 +385,11 @@
 }
 
 .viz-clock-track .is-used {
-  background: rgba(9, 28, 24, 0.16);
+  background: rgba(9, 18, 28, 0.16);
 }
 
 .viz-clock-track .is-left {
-  background: linear-gradient(90deg, var(--green), #4fd486);
+  background: linear-gradient(90deg, var(--green), #34c173);
 }
 
 .viz-clock-labels {
@@ -410,7 +410,7 @@
   }
 
   .struggle-bento-card.is-dark {
-    background: #0d2226;
+    background: #0f1e30;
   }
 }
 

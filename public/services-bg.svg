@@ -3,7 +3,7 @@
     <linearGradient id="tsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#e9f1ec"/>
       <stop offset="0.5" stop-color="#f3f8f2"/>
-      <stop offset="1" stop-color="#eef5ee"/>
+      <stop offset="1" stop-color="#ebf7f1"/>
     </linearGradient>
     <radialGradient id="tsun" cx="0.2" cy="0.08" r="0.5">
       <stop offset="0" stop-color="#f4f1d8" stop-opacity="0.6"/>
@@ -101,7 +101,7 @@
     <use xlink:href="#cal" transform="translate(318,496) rotate(0.9) scale(0.48)"/>
     <use xlink:href="#search" transform="translate(419,489) rotate(-0.0) scale(0.43)"/>
     <use xlink:href="#mic" transform="translate(597,508) rotate(13.4) scale(0.45)"/>
-    <use xlink:href="#pen" transform="translate(757,526) rotate(10.7) scale(0.50)" color="#149d4a" opacity="0.32"/>
+    <use xlink:href="#pen" transform="translate(757,526) rotate(10.7) scale(0.50)" color="#0b9a48" opacity="0.32"/>
     <use xlink:href="#id" transform="translate(903,482) rotate(13.9) scale(0.37)"/>
     <use xlink:href="#grad" transform="translate(1004,488) rotate(-8.4) scale(0.50)"/>
     <use xlink:href="#doc" transform="translate(1171,531) rotate(14.8) scale(0.44)"/>
@@ -127,7 +127,7 @@
     <use xlink:href="#case" transform="translate(1061,785) rotate(-8.7) scale(0.45)"/>
     <use xlink:href="#cal" transform="translate(1189,804) rotate(-4.1) scale(0.50)"/>
     <use xlink:href="#search" transform="translate(1304,799) rotate(-4.7) scale(0.45)"/>
-    <use xlink:href="#mic" transform="translate(1455,773) rotate(-13.9) scale(0.44)" color="#149d4a" opacity="0.32"/>
+    <use xlink:href="#mic" transform="translate(1455,773) rotate(-13.9) scale(0.44)" color="#0b9a48" opacity="0.32"/>
     <use xlink:href="#pen" transform="translate(1656,785) rotate(-2.9) scale(0.41)"/>
     <use xlink:href="#id" transform="translate(1782,798) rotate(16.9) scale(0.45)"/>
     <use xlink:href="#grad" transform="translate(1924,784) rotate(-16.5) scale(0.34)"/>
@@ -148,7 +148,7 @@
     <use xlink:href="#mic" transform="translate(596,1075) rotate(-15.5) scale(0.49)"/>
     <use xlink:href="#pen" transform="translate(749,1065) rotate(-17.5) scale(0.36)"/>
     <use xlink:href="#id" transform="translate(860,1074) rotate(-13.9) scale(0.38)"/>
-    <use xlink:href="#grad" transform="translate(1066,1063) rotate(-6.2) scale(0.41)" color="#149d4a" opacity="0.32"/>
+    <use xlink:href="#grad" transform="translate(1066,1063) rotate(-6.2) scale(0.41)" color="#0b9a48" opacity="0.32"/>
     <use xlink:href="#doc" transform="translate(1153,1089) rotate(8.5) scale(0.41)"/>
     <use xlink:href="#chat" transform="translate(1335,1074) rotate(-11.8) scale(0.42)"/>
     <use xlink:href="#case" transform="translate(1490,1070) rotate(6.4) scale(0.50)"/>

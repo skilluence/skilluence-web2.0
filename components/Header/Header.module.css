@@ -25,8 +25,8 @@
   justify-self: start;
   padding: 9px 22px;
   border-radius: 999px;
-  background: #0a1413;
-  box-shadow: 0 14px 34px rgba(4, 12, 10, 0.3);
+  background: #0a0f14;
+  box-shadow: 0 14px 34px rgba(4, 8, 12, 0.3);
 }
 
 .brand img {
@@ -49,13 +49,13 @@
   padding: 6px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
-  background: rgba(14, 28, 26, 0.38);
+  background: rgba(14, 20, 28, 0.38);
   color: rgba(255, 255, 255, 0.88);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 14px 34px rgba(6, 20, 18, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 14px 34px rgba(6, 12, 20, 0.22);
   backdrop-filter: blur(18px) saturate(150%);
   -webkit-backdrop-filter: blur(18px) saturate(150%);
   transition: background 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
@@ -63,7 +63,7 @@
 
 .site-header.is-scrolled .desktop-nav {
   border-color: rgba(255, 255, 255, 0.1);
-  background: rgba(8, 22, 22, 0.6);
+  background: rgba(8, 14, 22, 0.6);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
@@ -132,10 +132,10 @@
   gap: 2px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 18px;
-  background: rgba(8, 24, 22, 0.78);
+  background: rgba(8, 15, 24, 0.78);
   backdrop-filter: blur(22px) saturate(150%);
   -webkit-backdrop-filter: blur(22px) saturate(150%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 22px 52px rgba(5, 16, 14, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 22px 52px rgba(5, 10, 16, 0.4);
   opacity: 0;
   padding: 14px;
   pointer-events: none;
@@ -191,12 +191,12 @@
   letter-spacing: 0;
   text-transform: uppercase;
   color: var(--white);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 14px 34px rgba(6, 20, 18, 0.24);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 14px 34px rgba(6, 12, 20, 0.24);
   transition: background 180ms ease, transform 180ms ease;
 }
 
 .header-cta:hover {
-  background: #125e3b;
+  background: #055227;
   transform: translateY(-1px);
 }
 
@@ -208,10 +208,10 @@
   height: 46px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 999px;
-  background: rgba(9, 26, 26, 0.6);
+  background: rgba(9, 17, 26, 0.6);
   color: var(--white);
   cursor: pointer;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 14px 34px rgba(6, 20, 18, 0.28);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 14px 34px rgba(6, 12, 20, 0.28);
   backdrop-filter: blur(16px) saturate(150%);
   -webkit-backdrop-filter: blur(16px) saturate(150%);
 }
@@ -226,11 +226,11 @@
   overflow: auto;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 22px;
-  background: rgba(8, 24, 22, 0.82);
+  background: rgba(8, 15, 24, 0.82);
   backdrop-filter: blur(24px) saturate(150%);
   -webkit-backdrop-filter: blur(24px) saturate(150%);
   padding: 10px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 24px 70px rgba(5, 16, 14, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 24px 70px rgba(5, 10, 16, 0.4);
 }
 
 .mobile-panel.is-open {

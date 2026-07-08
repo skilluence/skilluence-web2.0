@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1700" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#edf4ed"/>
-      <stop offset="0.4" stop-color="#eef5ee"/>
-      <stop offset="1" stop-color="#eaf2ea"/>
+      <stop offset="0" stop-color="#eaf7f0"/>
+      <stop offset="0.4" stop-color="#ebf7f1"/>
+      <stop offset="1" stop-color="#e7f4ed"/>
     </linearGradient>
     <radialGradient id="bsun" cx="0.74" cy="0.1" r="0.5">
       <stop offset="0" stop-color="#f4f1d8" stop-opacity="0.7"/>
@@ -79,11 +79,11 @@
   <use xlink:href="#profile" transform="translate(1520,130) rotate(-4) scale(0.95)"/>
   <use xlink:href="#company" transform="translate(1790,235) rotate(-4) scale(0.95)"/>
 
-  <g stroke="#149d4a" fill="none" opacity="0.4">
+  <g stroke="#0b9a48" fill="none" opacity="0.4">
     <path stroke-width="2.5" d="M1235,205 Q1393,225 1520,130"/>
     <path stroke-width="2.5" d="M1520,130 Q1674,134 1790,235"/>
   </g>
-  <g fill="none" stroke="#149d4a" stroke-width="2.5" opacity="0.5">
+  <g fill="none" stroke="#0b9a48" stroke-width="2.5" opacity="0.5">
     <circle cx="1235" cy="205" r="30"/>
     <circle cx="1520" cy="130" r="30"/>
     <circle cx="1790" cy="235" r="34"/>

@@ -3,19 +3,19 @@
 :root {
   --font-heading: "Rethink Sans", sans-serif;
   --font-body: "Raleway", sans-serif;
-  --ink: #0e2429;
+  --ink: #0f1e30;
   --muted: #5a7168;
-  --line: rgba(23, 117, 74, 0.22);
+  --line: rgba(7, 110, 52, 0.22);
   --paper: #f3f7f4;
   --white: #ffffff;
   --soft: #e9f1ec;
-  --green: #149d4a;
-  --green-dark: #17754a;
-  --navy: #0e2429;
+  --green: #0b9a48;
+  --green-dark: #076e34;
+  --navy: #0f1e30;
   --font-accent: "Cormorant Garamond", Georgia, serif;
   --glass-light: rgba(255, 255, 255, 0.55);
   --glass-light-border: rgba(255, 255, 255, 0.65);
-  --glass-dark: rgba(13, 32, 40, 0.42);
+  --glass-dark: rgba(15, 30, 48, 0.42);
   --glass-dark-border: rgba(255, 255, 255, 0.16);
   --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.28);
   --glass-highlight-dark: inset 0 1px 0 rgba(255, 255, 255, 0.1);
