@@ -23,14 +23,14 @@
   display: inline-flex;
   align-items: center;
   justify-self: start;
-  padding: 9px 22px;
+  padding: 6px 18px;
   border-radius: 999px;
   background: #0a0f14;
   box-shadow: 0 14px 34px rgba(4, 8, 12, 0.3);
 }
 
 .brand img {
-  width: 138px;
+  width: 110px;
   height: auto;
 }
 
