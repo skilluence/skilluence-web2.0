@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic';
 import Link from "next/link";
-import { TrendingUp, ShieldCheck, MonitorSmartphone, Banknote, PartyPopper, Clock, ArrowUpRight, MapPin, Briefcase, Users } from "lucide-react";
+import { TrendingUp, ShieldCheck, MonitorSmartphone, Banknote, PartyPopper, Clock, ArrowUpRight } from "lucide-react";
 import SiteFooter from "@/components/footer/Footer";
 import CareerOpenings from "@/components/CareerOpenings";
 import db from "@/lib/db";

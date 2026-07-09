@@ -170,5 +170,5 @@
     <rect x="2022" y="845" width="6" height="9" fill="#f0e6ba" opacity="0.35"/>
     <rect x="2022" y="941" width="6" height="9" fill="#f0e6ba" opacity="0.37"/>
   </g>
-  <rect x="-100" y="960" width="2120" height="120" fill="#c8cdd2" opacity="0.15" filter="url(#hhaze3)"/>
+  <rect x="-100" y="960" width="2120" height="120" fill="#ccd2cd" opacity="0.15" filter="url(#hhaze3)"/>
 </svg>

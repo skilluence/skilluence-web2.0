@@ -2,9 +2,9 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 200px max(16px, calc((100% - 1180px) / 2)) 96px;
+  padding: 252px max(16px, calc((100% - 1180px) / 2)) 96px;
   background:
-    linear-gradient(180deg, #f3f7f4 0%, rgba(243, 247, 244, 0.8) 55px, rgba(243, 247, 244, 0.45) 130px, rgba(243, 247, 244, 0.18) 215px, rgba(243, 247, 244, 0) 310px),
+    linear-gradient(180deg, #f3f7f4 0%, rgba(243, 247, 244, 0.985) 35px, rgba(243, 247, 244, 0.94) 78px, rgba(243, 247, 244, 0.86) 124px, rgba(243, 247, 244, 0.74) 170px, rgba(243, 247, 244, 0.58) 216px, rgba(243, 247, 244, 0.4) 262px, rgba(243, 247, 244, 0.24) 310px, rgba(243, 247, 244, 0.11) 360px, rgba(243, 247, 244, 0) 415px),
     radial-gradient(ellipse 90% 60% at 18% 0%, rgba(11, 154, 72, 0.12), transparent 60%),
     radial-gradient(ellipse 80% 55% at 88% 100%, rgba(7, 110, 52, 0.16), transparent 62%),
     #0f1e30;

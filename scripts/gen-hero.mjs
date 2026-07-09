@@ -72,7 +72,7 @@ const sky = `${head(`    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0f1e30"/>
       <stop offset="0.45" stop-color="#283647"/>
       <stop offset="0.78" stop-color="#6f7d8f"/>
-      <stop offset="1" stop-color="#acb2ba"/>
+      <stop offset="1" stop-color="#aeb5b1"/>
     </linearGradient>
     <radialGradient id="hglow" cx="0.5" cy="0.66" r="0.62">
       <stop offset="0" stop-color="#f0f2da" stop-opacity="0.8"/>
@@ -91,7 +91,7 @@ ${stars(70, 420)}
   <g fill="#717f90" filter="url(#hsoft)" opacity="0.75">
     ${far.buildings}
   </g>
-  <rect x="-100" y="700" width="${W + 200}" height="180" fill="#dce0e4" opacity="0.32" filter="url(#hhaze)"/>
+  <rect x="-100" y="700" width="${W + 200}" height="180" fill="#dfe4e0" opacity="0.32" filter="url(#hhaze)"/>
   <rect width="${W}" height="${H}" filter="url(#hgrain)" opacity="0.5"/>
 </svg>
 `;
@@ -108,7 +108,7 @@ const midSvg = `${head(`    <filter id="hmid" x="-20%" y="-20%" width="140%" hei
     ${mid.windows}
     </g>
   </g>
-  <rect x="-100" y="800" width="${W + 200}" height="150" fill="#d1d6db" opacity="0.26" filter="url(#hhaze2)"/>
+  <rect x="-100" y="800" width="${W + 200}" height="150" fill="#d5dad5" opacity="0.26" filter="url(#hhaze2)"/>
 </svg>
 `;
 
@@ -121,7 +121,7 @@ const frontSvg = `${head(`    <filter id="hhaze3" x="-20%" y="-20%" width="140%"
   <g>
     ${front.windows}
   </g>
-  <rect x="-100" y="960" width="${W + 200}" height="120" fill="#c8cdd2" opacity="0.15" filter="url(#hhaze3)"/>
+  <rect x="-100" y="960" width="${W + 200}" height="120" fill="#ccd2cd" opacity="0.15" filter="url(#hhaze3)"/>
 </svg>
 `;
 
